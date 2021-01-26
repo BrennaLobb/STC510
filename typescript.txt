@@ -10,16 +10,82 @@ git clone https://github.com/BrennaLobb/STC510.git
 git config --global user.name "Brenna Lobb"
 git config --global user.email blobb830@gmail.com
 git config --global core.autocrlf input
-git status
-nano module2project.py
-
-git add module2project.py
-git commit -m "this is the program for module2"
-git push module2project
-
-Git add education.txt
-Git commit -m "this is the output file from module2project.py"
-Git push education.txt
-
-
-Script done on Mon Jan 25 18:30:29 2021
+git status(base) Brennas-MacBook-Pro:STC510 brennalobb$ curl -s -L http://bit.ly/fbi-help -o logdata.tar.gz
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ tar -xvzf logdata.tar.gz
+x log.csv: Write failed
+tar: Truncated input file (needed 2785518592 bytes, only 0 available)
+tar: Error exit delayed from previous errors.
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ -c
+-bash: -c: command not found
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ -C
+-bash: -C: command not found
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ ls
+README.md	log.csv		logdata.tar.gz	typescript.txt
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ -C logdata.tar.gz 
+-bash: -C: command not found
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ curl  -L http://bit.ly/fbi-help -o logdata.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   144  100   144    0     0    162      0 --:--:-- --:--:-- --:--:--   162
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+100  1034    0  1034    0     0    348      0 --:--:--  0:00:02 --:--:--     0
+100  366M  100  366M    0     0  6120k      0  0:01:01  0:01:01 --:--:-- 6049k
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ curl -L -O -C
+curl: option -C: requires parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ curl -L -O -C -
+curl: no URL specified!
+curl: try 'curl --help' or 'curl --manual' for more information
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ curl -L -O -C http://bit.ly/fbi-help -o logdata.tar.gz
+curl: option -C: expected a proper numerical parameter
+curl: try 'curl --help' or 'curl --manual' for more information
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ tar -xvzf logdata.tar.gz
+x log.csv
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ ls
+README.md	log.csv		logdata.tar.gz	typescript.txt
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ grep -r 'education' log.csv > education.txt
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ head education.txt 
+log.csv:1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+log.csv:66.249.64.efi,2017-06-27,02:14:29,0.0,1585002.0,0001585002-14-000027,mhglobaleducationq32014f.htm,304.0,218.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:61.135.217.idh,2017-06-27,02:15:35,0.0,922475.0,0001213900-16-016519,xslF345X03/f4082916zhang_itteducational.,200.0,4073.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:66.249.64.dea,2017-06-27,03:29:47,0.0,1561880.0,0001213900-16-015821,f8k080816_legacyeducation.htm,200.0,2911.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:40.77.167.cdg,2017-06-27,03:31:10,0.0,922475.0,0001213900-16-015395,xslF345X03/f4072716zhang_itteducational.,200.0,3958.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:209.126.105.hhg,2017-06-27,03:43:53,0.0,922475.0,0001213900-16-015149,f4071816yude_itteducational.xml,200.0,7941.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:108.59.3.iee,2017-06-27,03:48:05,0.0,922475.0,0001213900-16-015149,f4071816yude_itteducational.xml,200.0,7929.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:86.131.30.fad,2017-06-27,04:28:07,0.0,1130713.0,0001130713-16-000102,ex991investoreducationsess.htm,200.0,182762.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:86.131.30.fad,2017-06-27,04:28:07,0.0,1130713.0,0001130713-16-000102,a8-kinvestoreducationsessi.htm,200.0,25528.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:66.249.64.cgg,2017-06-27,04:39:40,0.0,1585002.0,0001585002-14-000027,mhglobaleducationq32014f.htm,304.0,218.0,0.0,0.0,0.0,10.0,0.0,
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ grep .txt education.txt | wd -l
+-bash: wd: command not found
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ grep .txt education.txt | wc -l
+      21
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ grep -r 'education' log.csv > education.txt 
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ grep -r '.txt' education.txt > text.txt
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ head text.txt 
+education.txt:log.csv:1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+education.txt:log.csv:86.153.148.abf,2017-06-27,06:14:10,0.0,1046568.0,0001132625-10-000026,v13ga4careereducation.txt,200.0,5440.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:86.153.148.abf,2017-06-27,06:59:20,0.0,922475.0,0001086364-10-008787,itteducation012910.txt,200.0,5188.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:40.77.167.ifh,2017-06-27,07:03:14,0.0,1302343.0,0000869311-17-000385,education.realty.trust..txt,200.0,5145.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:86.153.148.abf,2017-06-27,07:44:03,0.0,895421.0,0000895421-10-000405,neworientaleducation1.txt,200.0,3800.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:86.153.148.abf,2017-06-27,08:21:58,0.0,895421.0,0000895421-10-000405,neworientaleducation1.txt,200.0,3800.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:180.165.168.jeh,2017-06-27,12:45:47,0.0,1364742.0,0000215457-17-003221,tal.education.group..txt,200.0,4925.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:180.165.168.jeh,2017-06-27,12:49:03,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:199.192.67.ihd,2017-06-27,13:03:10,0.0,861177.0,0000861177-17-000012,new_oriental_education_tech.txt,200.0,11854.0,0.0,0.0,0.0,10.0,0.0,
+education.txt:log.csv:199.192.67.ihd,2017-06-27,13:15:16,0.0,1364742.0,0000215457-17-003221,tal.education.group..txt,200.0,11588.0,0.0,0.0,0.0,10.0,0.0,
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ grep -r 'education[A-Za-z0-0-]*[A-Za-z0-0-]*.txt' log.csv > education.txt 
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ head education.txt 
+log.csv:1.202.140.ged,2017-06-27,01:34:47,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+log.csv:86.153.148.abf,2017-06-27,06:14:10,0.0,1046568.0,0001132625-10-000026,v13ga4careereducation.txt,200.0,5440.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:180.165.168.jeh,2017-06-27,12:49:03,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,10.0,0.0,
+log.csv:204.4.182.ide,2017-06-27,13:48:17,0.0,886982.0,0000769993-17-000435,taleducation0gscototal.txt,200.0,5870.0,0.0,0.0,0.0,9.0,0.0,
+log.csv:86.153.148.abf,2017-06-27,22:41:48,0.0,1046568.0,0001132625-09-000021,v13ga3careereducation.txt,200.0,5619.0,0.0,0.0,0.0,10.0,0.0,
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ open education.txt 
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ git add education.txt 
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ git commit -m "this is the edited/updated education.txt file for 01/26/2021"
+[main d17eb6d] this is the edited/updated education.txt file for 01/26/2021
+ 1 file changed, 5 insertions(+), 12229 deletions(-)
+ rewrite education.txt (99%)
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ git push
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ git commit -m "this is my updated script file"
+(base) Brennas-MacBook-Pro:STC510 brennalobb$ git add typescript.txt
