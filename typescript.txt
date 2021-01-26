@@ -1,0 +1,24 @@
+Script started on Mon Jan 25 18:08:25 2021
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ 
+
+git clone https://github.com/BrennaLobb/STC510.git
+git config --global user.name "Brenna Lobb"
+git config --global user.email blobb830@gmail.com
+git config --global core.autocrlf input
+git status
+nano module2project.py
+
+git add module2project.py
+git commit -m "this is the program for module2"
+git push module2project
+
+Git add education.txt
+Git commit -m "this is the output file from module2project.py"
+Git push education.txt
+
+
+Script done on Mon Jan 25 18:30:29 2021
