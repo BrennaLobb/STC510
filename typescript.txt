@@ -1,3 +1,4 @@
+Brenna Lobb: Module 2 project script
 Script started on Mon Jan 25 18:08:25 2021
 
 The default interactive shell is now zsh.
